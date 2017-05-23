@@ -1,0 +1,21 @@
+{
+  "name": "21-angular-webpack",
+  "version": "0.1.0",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) Lab 21 - Intro to Angular and Webpack ======",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch" "webpack-dev-server --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidGWheeler/21-angular-webpack.git"
+  },
+  "keywords": [],
+  "author": "DavidGWheeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidGWheeler/21-angular-webpack/issues"
+  },
+  "homepage": "https://github.com/DavidGWheeler/21-angular-webpack#readme"
+}
