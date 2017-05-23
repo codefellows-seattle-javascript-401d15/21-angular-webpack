@@ -9,16 +9,18 @@ module.exports = {
     path: `${__dirname}/build`,
   },
   plugins: [
-    new HTMLPlugin({template: `${__dirname}/app/index.html`})
+    new HTMLPlugin({template: `${__dirname}/app/index.html`}),
   ],
   module: {
-    loaders: [{
-      test: /\.scss$/,
-      use: [
-        'style-loader',
-        'css-loader',
-        'sass-loader',
-      ]
-    }]
-  }
+    loaders: [
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+    ],
+  },
 };

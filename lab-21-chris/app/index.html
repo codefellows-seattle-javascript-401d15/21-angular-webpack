@@ -9,11 +9,16 @@
       <main>
         <section class="container" ng-controller='CowsayController'>
           <h2>{{ cowsayCtrl.title }}</h2>
-          <pre class="cow">
+          <pre class="cowtext">
             {{ cowsayCtrl.speak(cosayCtrl.text) }}
           </pre>
           <input type="text" ng-model="cowsayCtrl.text">
           <button ng-click="cowsayCtrl.logger(cowsayCtrl.text)">Log it!</button>
+          <pre class="cow">
+            {{ cowsayCtrl.cow }}
+          </pre>
+          <input type="text" ng-model="cowsayCtrl.cow">
+          <button ng-click="cowsayCtrl.cow(cowsayCtrl.text)">Show it!</button>
         </section>
         <section class="container"></section>
       </main>
