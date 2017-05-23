@@ -26,4 +26,15 @@ function CowsayController($log, $scope) {
     $log.debug('#cowsayCtrl.logger');
     $log.log(input);
   };
+
+  cowsayCtrl.saved = {};
+
+  cowsayCtrl.saved.title = 'Your saved Cow';
+
+
+  cowsayCtrl.save = function(input, animal) {
+    $log.debug('#cowsayCtrl.duplicate');
+    cowsayCtrl.saved.text = input;
+    cowsayCtrl.saved.animal = animal;
+  };
 }
