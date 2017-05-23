@@ -15,11 +15,11 @@ function CowsayController($log, $scope) {
 
   let cowsayCtrl = $scope.cowsayCtrl = {}
 
-  cowsayCtrl.title = 'Welcome to cowville'
+  cowsayCtrl.title = 'Who you gunna call?'
 
   cowsayCtrl.speak = function(input) {
     $log.debug('#cowsayCtrl.speak')
-    return cowsay.say({text: input || 'moooo', f: 'turtle'})
+    return cowsay.say({text: input || 'Ghostbuster!!!', f: 'ghostbusters'})
   }
 
   cowsayCtrl.logger = function(input) {
