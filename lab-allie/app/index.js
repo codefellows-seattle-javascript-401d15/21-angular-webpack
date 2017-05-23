@@ -29,12 +29,4 @@ function CowsayController($log, $scope) {
     $log.debug('#cowsayCtrl.logger');
     $log.log(input);
   }
-  
-  cowsayCtrl.remember = function() {
-    $log.debug('#cowsayCtrl.remember');
-
-    history.push(this);
-    $log.log('History: ', history);
-    return cowsay.say({text: history[0].text});
-  }
 }

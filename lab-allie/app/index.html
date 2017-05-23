@@ -2,7 +2,6 @@
 <html ng-app="cowsayApp">
   <head>
     <meta charset="utf-8">
-    <!-- <a href="https://www.youtube.com/watch?v=CMNry4PE93Y">I like turtles.</a> -->
     <title>I like turtles.</title>
   </head>
   <body>
@@ -13,18 +12,8 @@
         <pre class="cow">{{ cowsayCtrl.speak(cowsayCtrl.text) }}</pre>
         <input type="text" ng-model="cowsayCtrl.text">
         <button ng-click="cowsayCtrl.logger(cowsayCtrl.text)">Log this to the console!</button>
-        <button ng-click="cowsayCtrl.remember()">Remember this turtle!</button>
+        <button ng-click="cowsayCtrl.remember(cowsayCtrl.text)">Remember this turtle!</button>
       </section>
-      <!-- <section class="container">
-        <pre class="cow">{{ cowsayCtrl.speak(history[0]) }}</pre>
-        <pre class="cow">{{ cowsayCtrl.speak() }}</pre>
-      </section> -->
-      <!-- <section class="container second" id="second" ng-controller="CowsayController">
-        <a href="https://www.youtube.com/watch?v=CMNry4PE93Y">I also like turtles.</a>
-        <pre class="cow">{{ cowsayCtrl.speak(cowsayCtrl.text) }}</pre>
-        <input type="text" ng-model="cowsayCtrl.text">
-        <button ng-click="cowsayCtrl.logger(cowsayCtrl.text)">Log this to the console!</button>
-      </section> -->
     </main>
     <footer></footer>
   </body>
