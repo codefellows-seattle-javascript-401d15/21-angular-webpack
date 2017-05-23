@@ -1,7 +1,7 @@
 'use strict';
 
-// require('./scss/reset.scss');
-// require('./scss/main.scss');
+require('./scss/reset.scss');
+require('./scss/main.scss');
 
 const angular = require('angular');
 const cowsay = require('cowsay-browser');
@@ -15,13 +15,14 @@ function CowsayController($log, $scope) {
 
   let cowsayCtrl = $scope.cowsayCtrl = {};
 
-  cowsayCtrl.title = 'Welcome to cowville';
+  cowsayCtrl.title = 'Take me to your leader!';
   cowsayCtrl.speak = function(input){
     $log.debug('#cowsayCtrl.speak');
-    return cowsay.say({text: input, f: 'dragon'});
+    return cowsay.say({text: input || 'I am the great Cornholio!', f: 'beavis.zen'});
   };
   cowsayCtrl.logger = function(input){
     $log.debug('#cowsayCtrl.logger');
     $log.log(input);
   };
+
 }
