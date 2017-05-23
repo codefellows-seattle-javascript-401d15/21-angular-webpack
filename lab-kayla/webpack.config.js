@@ -3,13 +3,13 @@
 const HTMLPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: `${__dirname}/app/entry.js`,
+  entry: `${__dirname}/entry.js`,
   output: {
     filename: 'bundle.js',
     path: `${__dirname}/build`
   },
   plugins: [
-    new HTMLPlugin({ template: `${__dirname}/app/index.html` })
+    new HTMLPlugin({ template: `${__dirname}/index.html` })
   ],
   module: {
     loaders: [
