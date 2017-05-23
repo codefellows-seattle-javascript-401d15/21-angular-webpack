@@ -14,7 +14,7 @@ $gutter-sm: $gutter-std / 2;
 body {
   font-family: helvetica;
   font-size: 2vw;
-  background: $brand-primary * 3;
+  background: darkgreen;
 }
 
 h2 {
@@ -53,12 +53,21 @@ pre {
   margin: $gutter-std;
 }
 
+a {
+  color: white;
+}
+
 // :::: app styles ::::
+
+.second {
+  visibility: hidden;
+}
 
 .container {
   float: left;
   width: $box-std;
   margin: 5%;
+  clear: both;
 }
 
 .text-binder {
