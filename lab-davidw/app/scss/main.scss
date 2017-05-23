@@ -15,16 +15,15 @@ $gutter-sm: $gutter-std / 2;
   position: relative;
   width: 100%;
   max-width: 56.250em;
-  margin: 0 auto;
-  padding: 0 0em;
+  margin: 0% auto;
+  padding: 0em 0em;
   box-sizing: border-box; }
 
 body {
   font-family: 'Indie Flower', cursive;
   font-size: 2vw;
   background: $brand-primary * 3;
-  background-image: linear-gradient(to bottom, rgba(255,255,0,0.25), rgba(0,0,255,0.25)),
-    url("https://1drv.ms/i/s!AnXuC3eo7ukUpv5G_sNdPY2tI3I52Q");
+  background-image: linear-gradient(to bottom, rgba(255,255,0,0.25), rgba(0,0,255,0.25));
 }
 
 h2 {
