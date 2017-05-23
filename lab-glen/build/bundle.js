@@ -34054,7 +34054,7 @@ function format (text, wrap, delimiters) {
 	var balloon;
 	if (lines.length === 1) {
 		balloon = [
-			" " + top(maxLength), 
+			" " + top(maxLength),
 			delimiters.only[0] + " " + lines[0] + " " + delimiters.only[1],
 			" " + bottom(maxLength)
 		];
