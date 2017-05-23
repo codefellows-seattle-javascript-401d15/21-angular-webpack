@@ -1,11 +1,11 @@
 // :::: $vars ::::
 
-$brand-primary: #444;
+$brand-primary: #227;
 $btn-primary: $brand-primary / 2;
 $btn-hover: #31b1c1;
 $black: #000;
 $white: #fff;
-$box-std: 40%;
+$box-std: 50%;
 $gutter-std: 5%;
 $gutter-sm: $gutter-std / 2;
 
@@ -13,12 +13,12 @@ $gutter-sm: $gutter-std / 2;
 
 body {
   font-family: helvetica;
-  font-size: 2vw;
-  background: $brand-primary * 3;
+  font-size: 3vw;
+  background: $brand-primary * 2;
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 5vw;
   text-align: center;
   margin-bottom: $gutter-std;
 }
@@ -26,13 +26,13 @@ h2 {
 button {
   float: right;
   width: $box-std;
-  padding: 2% 0;
+  padding: 1% 0;
   background: $btn-primary / 3;
   color: #fff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: 350ms all;
+  transition: 400ms all;
 
   &:hover {
     background: $btn-hover;
