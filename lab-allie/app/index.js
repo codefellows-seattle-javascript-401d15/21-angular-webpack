@@ -15,6 +15,8 @@ function CowsayController($log, $scope) {
   
   let cowsayCtrl = $scope.cowsayCtrl = {};
   
+  let history = [];
+  
   cowsayCtrl.title = 'I like turtles.';
   
   cowsayCtrl.speak = function(input) {
@@ -28,11 +30,11 @@ function CowsayController($log, $scope) {
     $log.log(input);
   }
   
-  cowsayCtrl.showSecond = function() {
-    $log.debug('#cowsayCtrl.showSecond');
-    // document.getElementById('second').style.visibility = visible;
-    // document.getElementById('second').setAttribute('visibility', 'visible');
-    document.getElementById('second').classList.remove('second');
-    
+  cowsayCtrl.remember = function() {
+    $log.debug('#cowsayCtrl.remember');
+
+    history.push(this);
+    $log.log('History: ', history);
+    return cowsay.say({text: history[0].text});
   }
 }
