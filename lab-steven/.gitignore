@@ -1,3 +1,6 @@
+#webpack build directory
+build
+
 # ignore db directories
 db
 
