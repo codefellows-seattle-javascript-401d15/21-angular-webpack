@@ -1,0 +1,25 @@
+{
+  "name": "lab-carlo",
+  "version": "1.0.0",
+  "description": "lab 21",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/webpack/bin/webpack.js",
+    "watch": "webpack-dev-server --inline --hot"
+  },
+  "author": "Carlo",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "cowsay-browser": "^1.1.8",
+    "css-loader": "^0.28.2",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.0",
+    "webpack": "^2.6.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.4.5"
+  }
+}
