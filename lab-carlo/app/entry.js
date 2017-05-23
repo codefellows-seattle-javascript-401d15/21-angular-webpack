@@ -19,7 +19,7 @@ function CowsayController($log, $scope) {
 
   cowsayCtrl.speak = function(input) {
     $log.debug('#cowsayCtrl.speak');
-    return cowsay.say({text: input || 'mooo', f: 'turtle'});
+    return cowsay.say({text: input || 'mooo', f: 'supermilker'});
   };
 
   cowsayCtrl.logger = function(input) {
