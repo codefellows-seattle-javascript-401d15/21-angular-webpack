@@ -15,7 +15,7 @@ function CowsayController($log, $scope) {
 
   let cowsayCtrl = $scope.cowsayCtrl = {};
 
-  cowsayCtrl.title = 'Welcome to Cowville';
+  cowsayCtrl.title = 'Welcome to Meowville';
 
   cowsayCtrl.speak = function(input) {
     $log.debug('#cowsayCtrl.speak');
@@ -25,5 +25,10 @@ function CowsayController($log, $scope) {
   cowsayCtrl.logger = function(input) {
     $log.debug('#cowsayCtrl.logger');
     $log.log(input);
+  };
+
+  cowsayCtrl.curText = function(input) {
+    $log.debug('#cowsayCtrl.curText');
+    $log.log({text: input});
   };
 }
