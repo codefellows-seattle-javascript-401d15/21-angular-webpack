@@ -12,9 +12,9 @@ $gutter-sm: $gutter-std / 2;
 // global styles
 
 body {
-  font-family: helvetica;
+  font-family: 'Barrio';
   font-size: 2vw;
-  background: $brand-primary * 3;
+  background: orange;
 }
 
 h2 {
@@ -72,5 +72,10 @@ pre {
 
   + input {
     width: 100%;
+  }
+
+
+  .cow:hover {
+    color: blue;
   }
 }

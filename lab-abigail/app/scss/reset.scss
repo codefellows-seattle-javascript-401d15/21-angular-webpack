@@ -42,6 +42,15 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
+a {
+    text-decoration: none;
+		color: black;
+		&:hover {
+			color: white;
+		}
+  }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
