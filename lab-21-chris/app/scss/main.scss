@@ -1,6 +1,6 @@
 // :::: $vars ::::
 
-$brand-primary: #444;
+$brand-primary: #111;
 $btn-primary: $brand-primary / 2;
 $btn-hover: #31b1c1;
 $black: #000;
@@ -13,8 +13,9 @@ $gutter-sm: $gutter-std / 2;
 
 body {
   font-family: helvetica;
-  font-size: 2vw;
+  font-size: 2.5vw;
   background: $brand-primary * 3;
+  color: $white;
 }
 
 h2 {
@@ -57,8 +58,8 @@ pre {
 
 .container {
   float: left;
-  width: $box-std;
-  margin: 5%;
+  margin: auto;
+  padding: 2%;
 }
 
 .text-binder {
