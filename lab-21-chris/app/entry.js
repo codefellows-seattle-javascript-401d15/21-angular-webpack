@@ -23,18 +23,15 @@ function CowsayController($log, $scope) {
   //     cowsayCtrl.cows = cows;
   //   });
   // };
-  console.log(cowsayCtrl);
-  cowsayCtrl.cow = function(input) {
-    $log.debug('#cowsayCtrl.cow');
-    console.log('cowsayCtrl.cow', cowsayCtrl.cow);
-    return cowsay.say({text: 'moo', f: `${input}`});
-  };
+  // console.log(cowsayCtrl);
+  // cowsayCtrl.cow = function(input) {
+  //   $log.debug('#cowsayCtrl.cow');
+  //   // console.log('cowsayCtrl.cow', cowsayCtrl.cow('turtle'));
+  //   return cowsay.get(input);
+  // };
 
   cowsayCtrl.speak = function(input) {
     $log.debug('#cowsayCtrl.text');
-    // cow = 'turkey';
-    // cow = cowsayCtrl.list();
-    // console.log(cow);
     input = cowsayCtrl.text;
     return cowsay.say({text: input || 'moo', f: 'turkey'});
   };
