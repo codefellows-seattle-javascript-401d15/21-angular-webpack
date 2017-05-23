@@ -12,6 +12,12 @@
         <pre class="cow">{{cowsayCtrl.speak(cowsayCtrl.text)}}</pre>
         <input type="text" ng-model="cowsayCtrl.text">
         <button ng-click="cowsayCtrl.logger(cowsayCtrl.text)">Say it!</button>
+        <button ng-click="cowsayCtrl.save(cowsayCtrl.hist)">Save</button>
+      </section>
+      <section id="saved" class="container" ng-controller="CowsayController">
+        <h2>Saved</h2>
+        <!-- <pre class="cow">{{cowsayCtrl.speak(cowsayCtrl.text)}}</pre> -->
+        <pre class="history">{{cowsayCtrl.save()}}</pre>
       </section>
     </main>
     <footer></footer>

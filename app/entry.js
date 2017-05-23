@@ -15,7 +15,9 @@ function CowsayController($log, $scope) {
 
   let cowsayCtrl = $scope.cowsayCtrl = {}
 
-  cowsayCtrl.title = 'Welcome to cowville'
+  cowsayCtrl.hist = []
+
+  cowsayCtrl.title = '...tis a silly place'
 
   cowsayCtrl.speak = function(input){
     $log.debug('#cowsayCtrl.speak')
@@ -24,6 +26,21 @@ function CowsayController($log, $scope) {
 
   cowsayCtrl.logger = function(input){
     $log.debug('#cowsayCtrl.logger')
-    $log.log(input)
+
+    cowsayCtrl.hist.push(input)
+    $log.log(cowsayCtrl.speak(input))
+    $log.log(cowsayCtrl.hist)
+    return cowsayCtrl.speak(input)
+  }
+
+  cowsayCtrl.save = function(){
+    $log.debug('#cowsayCtrl.save')
+
+    let index = cowsayCtrl.hist.length - 1
+    $log.log(cowsayCtrl.hist)
+
+    $log.log(cowsayCtrl.speak(cowsayCtrl.hist[index]))
+    return cowsay.say({text: cowsayCtrl.hist[index] || 'Go M\'s', f: 'tux'})
+
   }
 }
