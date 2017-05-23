@@ -14,17 +14,12 @@ function CowsayController($log, $scope){
 
   cowsayCtrl.title = 'Welcome to Cowville'
 
-  cowsayCtrl.spoke = function(oldInput){
-    $log.debug('#cowsayCtrl.spoke')
-    return cowsay.say({text: oldInput, f: 'dragon'})
-  }
-
   cowsayCtrl.speak = function(input){
     $log.debug('#cowsayCtrl.speak')
     return cowsay.say({text: input || 'Mooo', f: 'dragon'})
   }
 
-  cowsayCtrl.logger = function(input, oldInput){
+  cowsayCtrl.logger = function(input){
     $log.debug('#cowsayCtrl.logger')
     $log.log(input)
   }
