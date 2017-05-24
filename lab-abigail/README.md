@@ -7,5 +7,6 @@ This application allows users to change the quote of the Cowsay animal by enteri
 ## Open in Browser
 In terminal tab, enter:
 1. `npm install` to install application resources.
+2. `rm -rf build` to refresh build
 2. `npm run watch` to run webpack server
 3. Open on `http://localhost:8080/`
